@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Agency — Digital Media</title>
+  <!--
+    ========= HOW TO USE THIS TEMPLATE =========
+    - Replace text marked with TODO to customize for your agency.
+    - Add your logo image by replacing the placeholder in the <header> (see .logo placeholder).
+    - Tweak colors and spacing in styles.css (see :root variables at the top).
+    - If you don't need JavaScript, you can remove the <script> tag at the bottom
+      (it's only used for the mobile menu toggle).
+  -->
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Simple, legible font; swap to whatever you prefer -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- ===================== Header / Navigation ===================== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <!--
+        LOGO PLACEHOLDER
+        Replace the div below with an <img> tag for your logo, for example:
+        <a href="#top" class="logo"><img src="logo.png" alt="Your Agency"></a>
+      -->
+      <a href="#top" class="logo" aria-label="Go to top">
+        <!-- This empty span creates a visible placeholder box you can swap for your image -->
+        <img src="logo.jpg" alt="Your Agency logo" class="logo-img" />
+        <span class="logo-text">Seraphae Media</span> <!-- TODO: Replace with your agency name -->
+      </a>
+
+      <!-- Accessible mobile menu button -->
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">
+        <span class="sr-only">Toggle menu</span>
+        <!-- Three bars icon -->
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <!-- Navigation links match your requirements -->
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#work" class="nav-link">Our Work</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== Home / Hero ===================== -->
+    <section id="home" class="section hero">
+      <div class="container">
+        <h1>Digital media that actually moves the needle.</h1> <!-- TODO: Replace headline -->
+        <p class="lead">
+          We help brands produce high‑impact content across every channel.
+          <!-- TODO: Replace with your agency's elevator pitch -->
+        </p>
+        <div class="cta-row">
+          <a href="#contact" class="btn primary">Let's talk</a>
+          <a href="#work" class="btn ghost">See our work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Our Work ===================== -->
+    <section id="work" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Our Work</h2>
+          <p>Recent projects and experiments. Swap the placeholder images/text with your own.</p>
+        </header>
+
+        <!--
+          PROJECT GRID
+          - Each .card can link to a case study page or an external URL.
+          - Replace placeholder images with your thumbnails.
+        -->
+        <div class="grid">
+          <article class="card">
+            <a href="#" class="card-media" aria-label="Project Alpha case study">
+              <img src="ringlondon.png" alt="Project Alpha thumbnail">
+            </a>
+            <div class="card-body">
+              <h3>Ring London Boxing</h3>
+              <p>Social media campaign that revived the social media presence of the oldest gym in London</p>
+              <a href="#" class="card-link">Read case study →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="#" class="card-media" aria-label="Project Beacon case study">
+              <img src="https://picsum.photos/seed/beacon/800/600" alt="Project Beacon thumbnail">
+            </a>
+            <div class="card-body">
+              <h3>Project Beacon</h3>
+              <p>Full‑funnel content system: strategy, production, and monthly optimization.</p>
+              <a href="#" class="card-link">Read case study →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <a href="#" class="card-media" aria-label="Project Circuit case study">
+              <img src="https://picsum.photos/seed/circuit/800/600" alt="Project Circuit thumbnail">
+            </a>
+            <div class="card-body">
+              <h3>Project Circuit</h3>
+              <p>Short‑form video series that grew TikTok to 100k in 90 days.</p>
+              <a href="#" class="card-link">Read case study →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== About ===================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>About</h2>
+          <p>Who we are and how we work.</p>
+        </header>
+
+        <div class="about-wrap">
+          <div class="about-text">
+            <h3>We build your brand presence.</h3>
+            <p>
+              Our team delivers content that performs.
+              From concept to cut‑down, we keep the process simpls..
+            </p>
+            <ul class="checklist">
+              <li>Social Media Management</li>
+              <li>Search Engine Optimization</li>
+              <li>Website Development</li>
+              <li>Google Advertisement</li>
+            </ul>
+          </div>
+          <div class="about-media">
+            <img src="darklogo.jpg" alt="Team collaboration">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Contact ===================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>Tell us about your goals and we'll get back within one business day.</p>
+        </header>
+
+        <!--
+          CONTACT FORM (frontend only)
+          - This form posts nowhere by default.
+          - To make it work, hook up your backend or a form service (e.g., Netlify Forms, Formspree).
+        -->
+        <form class="contact-form" action="#" method="post" onsubmit="return false;">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@company.com" />
+          </div>
+          <div class="form-row">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="6" required placeholder="What are you trying to achieve?"></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send message</button>
+            <p class="form-hint">No spam. Ever.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Agency. All rights reserved.</p>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Optional, tiny script for mobile nav + year -->
+  <script src="script.js" defer></script>
+</body>
+</html>
